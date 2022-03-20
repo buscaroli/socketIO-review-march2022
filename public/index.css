@@ -1,0 +1,94 @@
+:root {
+  --foregroundColor: #293241;
+  --backgroundColor: #e0fbfc;
+  --accentColor: #98c1d9;
+  --accentColorDark: #3d5a80;
+  --alertColor: #ee6c4d;
+  --titleColor: bisque;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--foregroundColor);
+  color: var(--foregroundColor);
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  background-color: var(--accentColorDark);
+  color: var(--titleColor);
+  font-weight: bolder;
+  font-size: 4vh;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.main {
+  width: 60%;
+  height: 90%;
+  background-color: pink;
+  margin: 0 auto;
+}
+
+.messages {
+  width: 100%;
+  height: 90%;
+  background-color: lightblue;
+}
+
+.messages,
+.msg {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.userInput {
+  width: 100%;
+  height: 10%;
+  background-color: bisque;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.msg {
+  width: 80%;
+}
+
+.msgText {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 5px;
+  border: 2px solid var(--foregroundColor);
+  border-radius: 8px;
+}
+
+.msgText:focus {
+  outline: none;
+  border: 2px solid var(--accentColor);
+}
+
+.shareLocation {
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 5px 2px;
+  border: 2px solid var(--foregroundColor);
+  border-radius: 8px;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.2em;
+  background-color: var(--foregroundColor);
+  color: var(--backgroundColor);
+}
